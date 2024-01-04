@@ -1,18 +1,19 @@
+const { REACT_APP_RESUME_DRIVE_ID } = process.env;
 export const resume = {
   name: 'Hritik Singh',
   email: 'hritiks127@gmail.com',
   Phone: '+918920255828',
-  resumeDriveLinkCode: "1Aou8wDfROpJoqG4k6WQdlV2T5zfnUa1x",
+  resumeDriveLinkCode:
+    REACT_APP_RESUME_DRIVE_ID ?? '1Aou8wDfROpJoqG4k6WQdlV2T5zfnUa1x',
   dob: {
     month: 'November',
     year: '1999',
     date: 13,
   },
   links: {
-    github: "https://github.com/hritiksingh13",
-    linkedIn: "https://www.linkedin.com/in/hritikk-singh",
-    instagram: "https://www.instagram.com/_._.hritik._.singh._._"
-
+    github: 'https://github.com/hritiksingh13',
+    linkedIn: 'https://www.linkedin.com/in/hritikk-singh',
+    instagram: 'https://www.instagram.com/_._.hritik._.singh._._',
   },
   headline: 'A Fullstack Web Developer',
   jobName: 'Web Developer',
@@ -123,5 +124,5 @@ export const resume = {
     },
   ],
   //hireMeHeader example: "I'm <span>open</span> to work!", use span for focusing texts
-  hireMeHeader: "I'm <span>Available</span> for freelancing"
+  hireMeHeader: "I'm <span>Available</span> for freelancing",
 };
