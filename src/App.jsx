@@ -7,6 +7,7 @@ import Skills from './components/Skills/skills';
 import Projects from './components/Projects/projects';
 import Freelance from './components/Freelance/freelance';
 import Footer from './components/Footer/footer';
+import ContactMe from './components/Contact/contactme';
 
 function App() {
   const refs = {
@@ -15,6 +16,7 @@ function App() {
     resume: forwardRef({}),
     skills: forwardRef({}),
     projects: forwardRef({}),
+    freelance: forwardRef({}),
     contactme: forwardRef({}),
   };
   return (
@@ -24,7 +26,8 @@ function App() {
       <Resume reference={refs.resume} />
       <Skills reference={refs.skills} />
       <Projects reference={refs.projects} />
-      <Freelance reference={refs.contactme} />
+      <Freelance reference={refs.freelance} />
+      <ContactMe reference={refs.contactme} />
       <Footer />
     </div>
   );

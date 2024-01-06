@@ -21,20 +21,15 @@ const Home = ({ reference }) => {
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
-      // In your case there's only one element to observe:
       if (entries[0].isIntersecting) {
-        // Not possible to set it back to false like this:
         setVisible(true);
-
-        // No need to keep observing:
         observer.unobserve(reference.current);
       }
     });
-
     observer.observe(reference.current);
-
     return () => observer.disconnect();
   }, []);
+
   return (
     <section ref={reference} className={isVisible ? ' is-visible' : ''}>
       {toggle ? (
@@ -53,7 +48,6 @@ const Home = ({ reference }) => {
               <a href={`mailto:${resume.email}`}>
                 <button className='btn btn-primary py-3 px-4'>HIRE ME</button>
               </a>
-              <button className='btn btn-secondary py-3 px-4'>MY WORKS</button>
             </div>
           </div>
         </div>
@@ -72,7 +66,6 @@ const Home = ({ reference }) => {
               <a href={`mailto:${resume.email}`}>
                 <button className='btn btn-primary py-3 px-4'>HIRE ME</button>
               </a>
-              <button className='btn btn-secondary py-3 px-4'>MY WORKS</button>
             </div>
           </div>
         </div>

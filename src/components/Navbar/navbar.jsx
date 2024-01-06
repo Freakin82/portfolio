@@ -99,13 +99,25 @@ const Navbar = ({ refs }) => {
           >
             <span className='on-hover text-white'>Resume</span>
           </div>
-          <div to='/skills'>
+          <div
+            onClick={() =>
+              refs.skills.current?.scrollIntoView({ behavior: 'smooth' })
+            }
+          >
             <span className='on-hover text-white'>Skills</span>
           </div>
-          <div to='/projects'>
+          <div
+            onClick={() =>
+              refs.projects.current?.scrollIntoView({ behavior: 'smooth' })
+            }
+          >
             <span className='on-hover text-white'>Projects</span>
           </div>
-          <div to='/contact'>
+          <div
+            onClick={() =>
+              refs.contactme.current?.scrollIntoView({ behavior: 'smooth' })
+            }
+          >
             <span className='on-hover text-white'>Contact</span>
           </div>
         </div>

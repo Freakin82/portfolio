@@ -23,6 +23,10 @@ body {
   color: #ffbd39;
 }
 
+.yellowhov:hover {
+  color: #ffbd39;
+}
+
 .mirror {
   position: absolute;
   top: 0px;

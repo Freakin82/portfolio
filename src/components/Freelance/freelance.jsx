@@ -8,20 +8,15 @@ const Freelance = ({ reference }) => {
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
-      // In your case there's only one element to observe:
       if (entries[0].isIntersecting) {
-        // Not possible to set it back to false like this:
         setVisible(true);
-
-        // No need to keep observing:
         observer.unobserve(reference.current);
       }
     });
-
     observer.observe(reference.current);
-
     return () => observer.disconnect();
   }, []);
+
   return (
     <section
       ref={reference}
@@ -42,9 +37,7 @@ const Freelance = ({ reference }) => {
               />
               <p class='mb-0 mt-8'>
                 <a href={`mailto:${resume.email}`}>
-                  <button className='btn btn-primary py-3 px-5'>
-                    Contact me
-                  </button>
+                  <button className='btn btn-primary py-3 px-5'>Hire me</button>
                 </a>
               </p>
             </div>

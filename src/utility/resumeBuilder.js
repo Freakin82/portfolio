@@ -3,6 +3,7 @@ export const resume = {
   name: 'Hritik Singh',
   email: 'hritiks127@gmail.com',
   Phone: '+918920255828',
+  address: 'Ghaziabad, Delhi NCR, India',
   resumeDriveLinkCode:
     REACT_APP_RESUME_DRIVE_ID ?? '1Aou8wDfROpJoqG4k6WQdlV2T5zfnUa1x',
   dob: {
@@ -12,6 +13,7 @@ export const resume = {
   },
   links: {
     github: 'https://github.com/hritiksingh13',
+    facebook: 'https://www.facebook.com/in/hritik.singh.3597',
     linkedIn: 'https://www.linkedin.com/in/hritikk-singh',
     instagram: 'https://www.instagram.com/_._.hritik._.singh._._',
   },
