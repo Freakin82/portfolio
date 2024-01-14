@@ -37,7 +37,7 @@ const Freelance = ({ reference }) => {
               />
               <p class='mb-0 mt-8'>
                 <a href={`mailto:${resume.email}`}>
-                  <button className='btn btn-primary py-3 px-5'>Hire me</button>
+                  <button className='btn btn-primary py-3 px-5'>Contact me</button>
                 </a>
               </p>
             </div>

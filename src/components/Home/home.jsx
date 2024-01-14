@@ -46,7 +46,7 @@ const Home = ({ reference }) => {
             <h2 className='heading2 mb-4'>{resume.headline}</h2>
             <div className='flex gap-2 justify-center md:justify-start'>
               <a href={`mailto:${resume.email}`}>
-                <button className='btn btn-primary py-3 px-4'>HIRE ME</button>
+                <button className='btn btn-primary py-3 px-4'>CONTACT ME</button>
               </a>
             </div>
           </div>
@@ -64,7 +64,7 @@ const Home = ({ reference }) => {
             </h1>
             <div className='flex gap-2 justify-center md:justify-start'>
               <a href={`mailto:${resume.email}`}>
-                <button className='btn btn-primary py-3 px-4'>HIRE ME</button>
+                <button className='btn btn-primary py-3 px-4'>CONTACT ME</button>
               </a>
             </div>
           </div>

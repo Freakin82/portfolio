@@ -15,7 +15,7 @@ export const resume = {
     github: 'https://github.com/hritiksingh13',
     facebook: 'https://www.facebook.com/hritik.singh.3597',
     linkedIn: 'https://www.linkedin.com/in/hritikk-singh',
-    instagram: 'https://www.instagram.com/_._.hritik._.singh._._',
+    instagram: '',
   },
   headline: 'A Fullstack Web Developer',
   jobName: 'Web Developer',

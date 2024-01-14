@@ -38,13 +38,6 @@ const Navbar = ({ refs }) => {
             </div>
             <div
               onClick={() =>
-                refs.about.current?.scrollIntoView({ behavior: 'smooth' })
-              }
-            >
-              <span className='on-hover text-white'>About</span>
-            </div>
-            <div
-              onClick={() =>
                 refs.resume.current?.scrollIntoView({ behavior: 'smooth' })
               }
             >
@@ -84,13 +77,6 @@ const Navbar = ({ refs }) => {
             }
           >
             <span className='on-hover text-white'>Home</span>
-          </div>
-          <div
-            onClick={() =>
-              refs.about.current?.scrollIntoView({ behavior: 'smooth' })
-            }
-          >
-            <span className='on-hover text-white'>About</span>
           </div>
           <div
             onClick={() =>
