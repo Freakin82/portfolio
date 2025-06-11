@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './navbar.css';
+import { resume } from '../../utility/resumeBuilder';
 
 const Navbar = ({ refs }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -12,7 +13,7 @@ const Navbar = ({ refs }) => {
         <div className='flex items-center justify-between mb-6'>
           <div className='text-white font-black text-xl'>
             <div to='/'>
-              <span>Hritik</span>
+              <span></span>
             </div>
           </div>
 
@@ -50,13 +51,13 @@ const Navbar = ({ refs }) => {
             >
               <span className='on-hover text-white'>Skills</span>
             </div>
-            <div
+            {resume.projects.length > 0 && <div
               onClick={() =>
                 refs.projects.current?.scrollIntoView({ behavior: 'smooth' })
               }
             >
               <span className='on-hover text-white'>Projects</span>
-            </div>
+            </div>}
             <div
               onClick={() =>
                 refs.contactme.current?.scrollIntoView({ behavior: 'smooth' })
@@ -67,9 +68,8 @@ const Navbar = ({ refs }) => {
           </div>
         </div>
         <div
-          className={`flex flex-col md:hidden space-y-4 ham-transition ${
-            isNavOpen ? 'ham-show' : 'ham-hide'
-          }`}
+          className={`flex flex-col md:hidden space-y-4 ham-transition ${isNavOpen ? 'ham-show' : 'ham-hide'
+            }`}
         >
           <div
             onClick={() =>

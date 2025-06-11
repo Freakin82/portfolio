@@ -1,25 +1,25 @@
 const { REACT_APP_RESUME_DRIVE_ID } = process.env;
 export const resume = {
-  name: 'Hritik Singh',
-  email: 'hritiks127@gmail.com',
-  Phone: '+918920255828',
-  address: 'Ghaziabad, Delhi NCR, India',
+  name: 'Paranjal Dwivedi',
+  email: 'paranjal82@gmail.com',
+  Phone: '+917251992882',
+  address: 'Gurugram, Haryana, India',
   resumeDriveLinkCode:
     REACT_APP_RESUME_DRIVE_ID ?? '1Aou8wDfROpJoqG4k6WQdlV2T5zfnUa1x',
   dob: {
-    month: 'November',
-    year: '1999',
-    date: 13,
+    month: 'March',
+    year: '2000',
+    date: 7,
   },
   links: {
-    github: 'https://github.com/hritiksingh13',
-    facebook: 'https://www.facebook.com/hritik.singh.3597',
-    linkedIn: 'https://www.linkedin.com/in/hritikk-singh',
+    github: 'https://github.com/Freakin82',
+    facebook: '',
+    linkedIn: 'https://www.linkedin.com/in/dwivedi-paranjal',
     instagram: '',
   },
-  headline: 'A Fullstack Web Developer',
-  jobName: 'Web Developer',
-  bio: 'Experienced Full Stack Developer skilled in crafting captivating web experiences with HTML, CSS, JavaScript, React JS, Node.js, Express.js, C#, and ASP .NET. Seamlessly blending frontend design and robust backend development for diverse web solutions.',
+  headline: 'A Software Development Engineer',
+  jobName: 'Full Stack Deveoper',
+  bio: 'Software Developer with 2+ years in Java(Spring Boot), React frontend, and Android app development. Proficient in building scalable APIs, responsive UIs, and mobile solutions with a strong focus on clean code and performance.',
   //description must be less than or equal to 100 characters
   education: [
     {
@@ -31,24 +31,24 @@ export const resume = {
     },
     {
       year: '2021 - 2021',
-      name: 'Web Development Bootcamp',
+      name: 'Java Spring Boot',
       affiliation: 'Udemy',
       description:
-        'Comprehensive training fostering strong coding abilities and practical web development skills.',
+        'Comprehensive training fostering strong coding abilities and practical backend services development skills.',
     },
     {
-      year: '2023 - 2023',
-      name: 'Pesto Plus Fellowship',
-      affiliation: 'Pesto Tech',
+      year: '2020 - 2020',
+      name: 'Android App Development',
+      affiliation: 'Internshala',
       description:
-        '8-month program shapes devs into global engineers, prioritizes skill, boosts income.',
+        'A complete bootcamp from beginner to advanced in Android App Development using Kotlin',
     },
   ],
   //description must be less than or equal to 100 characters
   experience: [
     {
-      year: '2022 - Present',
-      name: 'MAQ Software',
+      year: '2022 - 2023',
+      name: 'ZopSmart Technology',
       affiliation: 'IT Company',
       description: '',
     },
@@ -57,18 +57,18 @@ export const resume = {
     primary: [
       {
         name: 'ReactJS',
-        score: 95,
+        score: 85,
       },
       {
         name: 'Javascript',
         score: 90,
       },
       {
-        name: 'HTML5 & CSS3',
-        score: 90,
+        name: 'Java',
+        score: 95,
       },
       {
-        name: 'Redux',
+        name: 'Spring Boot',
         score: 95,
       },
       {
@@ -78,52 +78,35 @@ export const resume = {
     ],
     secondary: [
       {
-        name: 'tailwind CSS',
+        name: 'Android Development',
         score: 90,
       },
       {
-        name: 'Node & Express JS',
-        score: 70,
+        name: 'Kotlin',
+        score: 80,
       },
       {
-        name: '.NET',
-        score: 80,
+        name: 'TypeScript',
+        score: 70,
       },
       {
         name: 'MongoDB',
         score: 70,
       },
-      {
-        name: 'PowerShell & Bicep Scripts',
-        score: 70,
-      },
     ],
   },
   platforms: [
+    'Intellij',
     'Visual Studio',
     'Visual Studio Code',
+    'Android Studio',
     'GIT',
     'GitHub',
     'Azure DevOps',
     'JiRa',
   ],
   projects: [
-    {
-      name: 'EmbedFAST',
-      link: 'https://maqsoftware.com/embedfast',
-    },
-    {
-      name: 'Car Bazaar',
-      link: 'https://carbazaar-node.netlify.app/',
-    },
-    {
-      name: 'Clock App',
-      link: 'https://cpgy2o.csb.app/',
-    },
-    {
-      name: 'Link Shortner',
-      link: 'https://53299h.csb.app/',
-    },
+
   ],
   //hireMeHeader example: "I'm <span>open</span> to work!", use span for focusing texts
   hireMeHeader: "I'm <span>Available</span> for freelancing",
